@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins';
+}
+
+#map{
+    height: 100vh;
+}
+aside{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+    position: fixed;
+    height: 100vh;
+    left: 10px;
+    top: 0;
+    z-index: 10000;
+}
+.sidebar{
+    background-color: rgba(52, 52, 52, 0.659);
+    color: white;
+    height: 90vh;
+    width: 280px;
+    transition: all 0.2s;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar h1{
+    text-align: center;
+    margin-top: 10px 0px 20px;
+    background: rgba(52, 52, 52, 1);
+    padding: 4px;
+    transition: all 0.3s;
+    font-family: 'Condiment', cursive;
+    letter-spacing: 2px;
+    font-size: 32px;
+    border-radius: 6px;
+}
+.sidebar h1:hover{
+    background-color: white;
+    color: black;
+    
+}
+.sidebar:hover{
+    background: rgba(52, 52, 52, 1); 
+}
+form{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+form button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 11);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.field input,
+.field select{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+/* Liste alanı */
+
+ul{
+    overflow: auto;
+    height: 100%;
+    padding-right: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+ul::-webkit-scrollbar{
+    background: black;
+    width: 10px;
+    border-radius: 5px;
+}
+ ul::-webkit-scrollbar-thumb{
+    background: rgb(185, 181, 181);
+    border-radius: 10px;
+ }
+ li{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: rgb(193, 193, 193);
+color: black;
+padding:  10px;
+margin-top: 10px;
+border-radius: 10px;
+
+ }
+
+ li div p span{
+    font-weight: bold;
+ }
+
+ li div{
+display: flex;
+flex-direction: column;
+gap: 5px;
+font-size: 16px;
+font-family: 'Poppins', cursive;   
+ }
+
+ li i{
+cursor: pointer;
+transition: all 0.3s;
+font-size: 21px;
+ }
+
+ li i:hover{
+    color: red;
+ }
